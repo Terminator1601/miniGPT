@@ -1,0 +1,22 @@
+import tkinter as tk
+from tkinter import ttk
+from homepage import create_homepage
+
+def main():
+    # Create the main application window
+    root = tk.Tk()
+    root.title("Mini-GPT")  # Set the title of the window
+    
+    # Style the application
+    style = ttk.Style()
+    style.configure('TButton', font=('Arial', 12))
+    style.configure('TLabel', font=('Arial', 14))
+    
+    # Create the homepage
+    create_homepage(root)
+    
+    # Run the Tkinter event loop
+    root.mainloop()
+
+if __name__ == "__main__":
+    main()
